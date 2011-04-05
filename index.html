@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Page Turn Demo</title>
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<style type="text/css">
+<!--
+/* hide from ie5 mac \*/
+html {
+    margin:0;
+    padding:0;
+    border:none;
+	height: 100%;
+	overflow:auto;
+}
+/* end hide from ie5 mac */
+
+body {
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #222222;
+	color:#555555;
+	font-size:.7em;
+	text-align:center;
+}
+-->
+</style>
+</head>
+<body bgcolor="#222222" id="flashcontent">
+<div style="padding:8em;">
+	<p>
+	<strong>
+	This site requires Flash Player 9 and a Javascript enabled web browser.<br/>
+	You can download the Adobe Flash Player from the following location:<br/>
+	<a href="http://www.adobe.com/go/getflashplayer/" target="_blank">www.adobe.com/go/getflashplayer</a>
+	</strong>
+	</p>
+</div>
+<script type="text/javascript">
+	// <![CDATA[
+	var so = new SWFObject("pageturn.swf", "pageturn", "100%", "100%", 9, "#333333");
+	var flashEnabled = so.write("flashcontent");
+	// ]]>
+</script>
+</body>
+</html>
